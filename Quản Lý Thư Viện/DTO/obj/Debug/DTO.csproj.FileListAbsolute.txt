@@ -1,0 +1,48 @@
+D:\BTL_C#\DTO\bin\Debug\DTO.dll
+D:\BTL_C#\DTO\bin\Debug\DTO.pdb
+D:\BTL_C#\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\BTL_C#\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\BTL_C#\DTO\obj\Debug\DTO.dll
+D:\BTL_C#\DTO\obj\Debug\DTO.pdb
+D:\BTL\DTO\bin\Debug\DTO.dll
+D:\BTL\DTO\bin\Debug\DTO.pdb
+D:\BTL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BTL\DTO\obj\Debug\DTO.dll
+D:\BTL\DTO\obj\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\BTL\DTO\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\BTL\DTO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\BTL\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\BTL\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\BTL\DTO\obj\Debug\DTO.dll
+C:\Users\Administrator\Desktop\BTL\DTO\obj\Debug\DTO.pdb
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DTO\bin\Debug\DTO.dll
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DTO\bin\Debug\DTO.pdb
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DTO\obj\Debug\DTO.dll
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DTO\obj\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\bin\Debug\DTO.dll
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\obj\Debug\DTO.dll
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DTO\obj\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DTO\bin\Debug\DTO.dll
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DTO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DTO\obj\Debug\DTO.dll
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DTO\obj\Debug\DTO.pdb
+D:\LTW\Quản Lý Thư Viện\DTO\bin\Debug\DTO.dll
+D:\LTW\Quản Lý Thư Viện\DTO\bin\Debug\DTO.pdb
+D:\LTW\Quản Lý Thư Viện\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\LTW\Quản Lý Thư Viện\DTO\obj\Debug\DTO.dll
+D:\LTW\Quản Lý Thư Viện\DTO\obj\Debug\DTO.pdb
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\bin\Debug\DTO.dll
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\bin\Debug\DTO.pdb
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.dll
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.pdb
+C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\bin\Debug\DTO.dll
+C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\bin\Debug\DTO.pdb
+C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.dll
+C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DTO\obj\Debug\DTO.pdb
