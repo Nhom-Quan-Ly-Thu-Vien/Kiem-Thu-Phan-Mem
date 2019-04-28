@@ -693,3 +693,6 @@ E:\Kiểm thử\BTL\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien
 E:\Kiểm thử\BTL\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
 E:\Kiểm thử\BTL\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.QuanLySach.resources
 E:\Kiểm thử\BTL\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+E:\Git\Kiem-Thu-Phan-Mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+E:\Git\Kiem-Thu-Phan-Mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+E:\Git\Kiem-Thu-Phan-Mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
