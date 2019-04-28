@@ -1,0 +1,76 @@
+D:\BTL_C#\DAO\bin\Debug\DAO.dll
+D:\BTL_C#\DAO\bin\Debug\DAO.pdb
+D:\BTL_C#\DAO\bin\Debug\DTO.dll
+D:\BTL_C#\DAO\bin\Debug\DTO.pdb
+D:\BTL_C#\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\BTL_C#\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\BTL_C#\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\BTL_C#\DAO\obj\Debug\DAO.dll
+D:\BTL_C#\DAO\obj\Debug\DAO.pdb
+D:\BTL\DAO\bin\Debug\DAO.dll
+D:\BTL\DAO\bin\Debug\DAO.pdb
+D:\BTL\DAO\bin\Debug\DTO.dll
+D:\BTL\DAO\bin\Debug\DTO.pdb
+D:\BTL\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BTL\DAO\obj\Debug\DAO.dll
+D:\BTL\DAO\obj\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\BTL\DAO\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\BTL\DAO\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\BTL\DAO\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\BTL\DAO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\BTL\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\BTL\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\BTL\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Administrator\Desktop\BTL\DAO\obj\Debug\DAO.dll
+C:\Users\Administrator\Desktop\BTL\DAO\obj\Debug\DAO.pdb
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\bin\Debug\DAO.dll
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\bin\Debug\DAO.pdb
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\bin\Debug\DTO.dll
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\bin\Debug\DTO.pdb
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\obj\Debug\DAO.dll
+C:\Users\phamv\Desktop\GitHub\Nhom-Quan-Ly-Thu-Vien\BTL\BTL\DAO\obj\Debug\DAO.pdb
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\bin\Debug\DAO.dll
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\bin\Debug\DAO.pdb
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\bin\Debug\DTO.dll
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.dll
+C:\Users\Administrator\Downloads\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.pdb
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\bin\Debug\DAO.dll
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\bin\Debug\DAO.pdb
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\bin\Debug\DTO.dll
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\bin\Debug\DTO.pdb
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.dll
+C:\Users\phamv\Desktop\BTL\BTL - Copy\BTL - Copy\DAO\obj\Debug\DAO.pdb
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\bin\Debug\DAO.dll
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\bin\Debug\DAO.pdb
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\bin\Debug\DTO.dll
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\obj\Debug\DAO.dll
+C:\Users\Administrator\Downloads\Compressed\BTL - Copy\DAO\obj\Debug\DAO.pdb
+D:\LTW\Quản Lý Thư Viện\DAO\bin\Debug\DAO.dll
+D:\LTW\Quản Lý Thư Viện\DAO\bin\Debug\DAO.pdb
+D:\LTW\Quản Lý Thư Viện\DAO\bin\Debug\DTO.dll
+D:\LTW\Quản Lý Thư Viện\DAO\bin\Debug\DTO.pdb
+D:\LTW\Quản Lý Thư Viện\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\LTW\Quản Lý Thư Viện\DAO\obj\Debug\DAO.dll
+D:\LTW\Quản Lý Thư Viện\DAO\obj\Debug\DAO.pdb
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\bin\Debug\DAO.dll
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\bin\Debug\DAO.pdb
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\bin\Debug\DTO.dll
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\bin\Debug\DTO.pdb
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.dll
+E:\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.pdb
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\bin\Debug\DAO.dll
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\bin\Debug\DAO.pdb
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\bin\Debug\DTO.dll
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\bin\Debug\DTO.pdb
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\obj\Debug\DAO.dll
+E:\Kiểm thử\BTL\Quản Lý Thư Viện\DAO\obj\Debug\DAO.pdb
