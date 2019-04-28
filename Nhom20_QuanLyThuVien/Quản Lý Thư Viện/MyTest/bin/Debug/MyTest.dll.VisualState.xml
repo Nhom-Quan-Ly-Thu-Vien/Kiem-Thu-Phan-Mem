@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1010]C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\bin\Debug\MyTest.dll</TopNode>
+  <SelectedNode>[0-1002]MyTest.Test.Test_ThemSach.testTinh("MS1","null","5","Van Hoc","Nam Cao","Ten sach khong duov de tronh")</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1010]C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\bin\Debug\MyTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1011]MyTest" Expanded="true" />
+    <Node UniqueName="[0-1012]MyTest.Test" Expanded="true" />
+    <Node UniqueName="[0-1000]MyTest.Test.Test_ThemSach" Expanded="true" />
+    <Node UniqueName="[0-1001]MyTest.Test.Test_ThemSach.testTinh" Expanded="true" />
+  </Nodes>
+</VisualState>
