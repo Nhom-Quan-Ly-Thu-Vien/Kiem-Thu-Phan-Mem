@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1006]E:\Kiểm thử\BTL\Quản Lý Thư Viện\Test_SuaDocGia\bin\Debug\Test_SuaDocGia.dll</TopNode>
+  <SelectedNode>[0-1000]Test_SuaDocGia.AnotherTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1006]E:\Kiểm thử\BTL\Quản Lý Thư Viện\Test_SuaDocGia\bin\Debug\Test_SuaDocGia.dll" Expanded="true" />
+    <Node UniqueName="[0-1007]Test_SuaDocGia" Expanded="true" />
+    <Node UniqueName="[0-1000]Test_SuaDocGia.AnotherTest" Expanded="true" />
+    <Node UniqueName="[0-1001]Test_SuaDocGia.AnotherTest.Round1" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1004]Test_SuaDocGia.Test" Expanded="true" />
+  </Nodes>
+</VisualState>

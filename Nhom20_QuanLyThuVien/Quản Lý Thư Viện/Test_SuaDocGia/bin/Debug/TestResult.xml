@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\Kiểm thử\BTL\Quản Lý Thư Viện\Test_SuaDocGia\bin\Debug\Test_SuaDocGia.dll" total="0" errors="0" failures="0" not-run="1" inconclusive="0" ignored="0" skipped="0" invalid="1" date="2019-04-24" time="15:57:52">
+  <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="G:\NUnit-2.7.0\bin" machine-name="QUOCCUONG" user="quocc" user-domain="QUOCCUONG" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="E:\Kiểm thử\BTL\Quản Lý Thư Viện\Test_SuaDocGia\bin\Debug\Test_SuaDocGia.dll" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Test_SuaDocGia" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="AnotherTest" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="Round1" executed="True" result="Failure" success="False" time="0.001" asserts="0">
+                <results>
+                  <test-case name="Test_SuaDocGia.AnotherTest.Round1" executed="False" result="NotRunnable">
+                    <reason>
+                      <message><![CDATA[Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference]]></message>
+                    </reason>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
