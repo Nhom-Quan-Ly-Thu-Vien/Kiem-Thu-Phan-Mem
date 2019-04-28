@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\bin\Debug\MyTest.dll" total="9" errors="0" failures="8" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-04-28" time="07:59:25">
+  <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit-2.7.0\bin" machine-name="NOMERCY" user="phamv" user-domain="NOMERCY" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\bin\Debug\MyTest.dll" executed="True" result="Failure" success="False" time="16.725" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="MyTest" executed="True" result="Failure" success="False" time="16.701" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="16.700" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="Test_ThemSach" executed="True" result="Failure" success="False" time="16.696" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="testTinh" executed="True" result="Failure" success="False" time="16.691" asserts="0">
+                    <results>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;Lao hac&quot;,&quot;5&quot;,&quot;Van Hoc&quot;,&quot;Nam Cao&quot;,&quot;Thanh cong&quot;)" executed="True" result="Success" success="True" time="1.773" asserts="1" />
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;null&quot;,&quot;5&quot;,&quot;Van Hoc&quot;,&quot;Nam Cao&quot;,&quot;Ten sach khong duov de tronh&quot;)" executed="True" result="Failure" success="False" time="1.764" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 28. Strings differ at index 1.
+  Expected: "Thanh cong"
+  But was:  "Ten sach khong duov de tronh"
+  ------------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;So do&quot;,&quot;null&quot;,&quot;Van Hoc&quot;,&quot;Vu Trong Phung&quot;,&quot;so luong khong duoc de trong&quot;)" executed="True" result="Failure" success="False" time="1.700" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 28. Strings differ at index 0.
+  Expected: "Thanh cong"
+  But was:  "so luong khong duoc de trong"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;Truyen Kieu&quot;,&quot;4&quot;,&quot;null&quot;,&quot;Nguyen Du&quot;,&quot;The loai g khong duoc de trong&quot;)" executed="True" result="Failure" success="False" time="1.818" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 30. Strings differ at index 2.
+  Expected: "Thanh cong"
+  But was:  "The loai g khong duoc de trong"
+  -------------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;tuoi tho du doi&quot;,&quot;2&quot;,&quot;Van Hoc&quot;,&quot;null&quot;,&quot;tac gia khong duoc de trong&quot;)" executed="True" result="Failure" success="False" time="1.772" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 27. Strings differ at index 0.
+  Expected: "Thanh cong"
+  But was:  "tac gia khong duoc de trong"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;Nhung nguoi khon kho&quot;,&quot;123456&quot;,&quot;Tieu thuyet&quot;,&quot;Victor Hugo&quot;,&quot;so luong qua 5 ki tu so&quot;)" executed="True" result="Failure" success="False" time="1.907" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 23. Strings differ at index 0.
+  Expected: "Thanh cong"
+  But was:  "so luong qua 5 ki tu so"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;aaaaaaaaaaaa..aa&quot;,&quot;3&quot;,&quot;Tho&quot;,&quot;Nguyen Trai&quot;,&quot;Ten qua 50 ki tu&quot;)" executed="True" result="Failure" success="False" time="1.972" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 16. Strings differ at index 1.
+  Expected: "Thanh cong"
+  But was:  "Ten qua 50 ki tu"
+  ------------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;Tieng goi noi hoang da&quot;,&quot;5&quot;,&quot;Tieu thuyet&quot;,&quot;aaaaaaa..aa&quot;,&quot;tac gia qua 50 ki tu&quot;)" executed="True" result="Failure" success="False" time="1.889" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 20. Strings differ at index 0.
+  Expected: "Thanh cong"
+  But was:  "tac gia qua 50 ki tu"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="MyTest.Test.Test_ThemSach.testTinh(&quot;MS1&quot;,&quot;Khong gia dinh&quot;,&quot;aaa&quot;,&quot;Tieu thuyet&quot;,&quot;Khong Nho&quot;,&quot;Khong dung dinh dang so luong&quot;)" executed="True" result="Failure" success="False" time="1.971" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected string length 10 but was 29. Strings differ at index 0.
+  Expected: "Thanh cong"
+  But was:  "Khong dung dinh dang so luong"
+  -----------^
+]]></message>
+                          <stack-trace><![CDATA[at MyTest.Test.Test_ThemSach.testTinh(String ma, String ten, String sl, String tl, String tg, String mess) in c:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\MyTest\Test_ThemSach.cs:line 51
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
