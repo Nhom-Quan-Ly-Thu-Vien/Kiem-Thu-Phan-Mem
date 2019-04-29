@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\PhamVanHieu.dll" total="9" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-04-30" time="00:47:02">
+  <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit-2.7.0\bin" machine-name="NOMERCY" user="phamv" user-domain="NOMERCY" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\PhamVanHieu.dll" executed="True" result="Success" success="True" time="19.047" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="PhamVanHieu" executed="True" result="Success" success="True" time="19.047" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestThemSach" executed="True" result="Success" success="True" time="19.046" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="testThems" executed="True" result="Success" success="True" time="19.045" asserts="0">
+                <results>
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;Buoc Duong Cung&quot;,&quot;5&quot;,&quot;Van Hoc&quot;,&quot;Ngo Tat To&quot;,&quot;Successfull&quot;)" executed="True" result="Success" success="True" time="1.851" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(null,&quot;5&quot;,&quot;Van Hoc&quot;,&quot;Nam Cao&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.118" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;So do&quot;,null,&quot;Van Hoc&quot;,&quot;Vu Trong Phung&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.017" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;Truyen Kieu&quot;,&quot;4&quot;,null,&quot;Nguyen Du&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.261" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;tuoi tho du doi&quot;,&quot;2&quot;,&quot;Van Hoc&quot;,null,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.151" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;Hai Dua Tre&quot;,&quot;123456&quot;,&quot;Van Hoc&quot;,&quot;Victor Hugo&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.631" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;aaaaaaaaaaaa..aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&quot;,&quot;3&quot;,&quot;Van Hoc&quot;,&quot;Nguyen Trai&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="1.947" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;Tieng goi noi hoang da&quot;,&quot;5&quot;,&quot;Van Hoc&quot;,&quot;aaaaaaa..aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="1.985" asserts="1" />
+                  <test-case name="PhamVanHieu.TestThemSach.testThems(&quot;Khong gia dinh&quot;,&quot;aaa&quot;,&quot;Van Hoc&quot;,&quot;Khong Nho&quot;,&quot;Unsuccessfull&quot;)" executed="True" result="Success" success="True" time="2.027" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

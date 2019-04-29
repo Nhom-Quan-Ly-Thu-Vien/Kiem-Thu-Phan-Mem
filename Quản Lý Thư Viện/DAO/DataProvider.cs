@@ -25,11 +25,11 @@ namespace DAO
         }
 
         //chuoi ket noi
-        //string connection = @"Data Source=DESKTOP-HVKPF81\SQLEXPRESS;Initial Catalog=QuanLyThuVien1.0;Integrated Security=True";
+        string connection = @"Data Source=NOMERCY;Initial Catalog=QuanLyThuVien1.0;Integrated Security=True";
 
         //string connection = @"Data Source=ADMINISTRATOR\PHD;Initial Catalog=QuanLyThuVien1.0;Integrated Security=True";
 
-        string connection = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyThuVien1.0;Integrated Security=True";
+        //string connection = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyThuVien1.0;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query)
         {

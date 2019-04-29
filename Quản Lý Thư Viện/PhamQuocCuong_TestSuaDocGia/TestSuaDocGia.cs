@@ -14,7 +14,7 @@ using DTO;
 
 namespace PhamQuocCuong_TestSuaDocGia
 {
-    [TestFixture]
+    //[TestFixture]
     public class Test_SuaDocGia
     {
         public int row = 1;
@@ -23,7 +23,7 @@ namespace PhamQuocCuong_TestSuaDocGia
             return DocGhiFileExcel.getExcelFile(@"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
         }
 
-        [TestCaseSource("data"),Test][STAThread]
+        //[TestCaseSource("data"),Test][STAThread]
         public void Test(string madg, string tendg, string diachi, string sdt, string gt, string msg)
         {
             QuanLySach qls = new QuanLySach();

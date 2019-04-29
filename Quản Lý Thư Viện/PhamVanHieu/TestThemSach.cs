@@ -1,7 +1,6 @@
 ﻿using QuanLyThuVien;
 using System;
-using NUnit.Extensions.Forms; //Sử dụng để viết test, nhất thiết phải có
-//using NUnit.Framework; //Cần có để sử dụng các annotation trong NUnit
+using NUnit.Extensions.Forms; 
 using NUnit.Framework;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
@@ -13,34 +12,50 @@ using DTO;
 
 namespace PhamVanHieu
 {
-    //[TestFixture]
+    [TestFixture]
     public class TestThemSach
     {
 
-        public int row = 1;
+        public int row = 2;
         public static List<Object[]> data()
         {
-            return DocGhiFile.getExcelFile(@"C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Pham Van Hieu\dulieutest.xlsx");
+            return DocGhiFile.getExcelFile(@"C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\dulieutest.xlsx");
         }
 
-        //[TestCaseSource("data"), Test]
-        public void testTinh(String ma, String ten, String sl, String tl, String tg, String mess)
+        [TestCaseSource("data"), Test]
+        public void testThems(String ten, String sl, String tl, String tg, String mess)
         {
 
+            QuanLySach qls = new QuanLySach();
+            qls.Show();
+            
 
-
-            if (mess.Equals("Thanh cong"))
+            string actmsg = "";
+            ModalFormTester msgBox = new ModalFormTester();
+            msgBox.ExpectModal("Info", delegate
             {
-                DocGhiFile.setExcelFile(row++, 7, "Pass", @"C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Pham Van Hieu\dulieutest.xlsx");
-                Assert.AreEqual("Thanh cong", mess);
+                MessageBoxTester ms = new MessageBoxTester("Info");
+                actmsg = ms.Text;
+                ms.ClickOk();
+            });
+
+            qls.testDuLieu(ten,  sl,  tl,  tg);
+
+            ButtonTester btnthem = new ButtonTester("btnThemSach");
+            btnthem[0].Click();
+
+            if (mess.Equals(actmsg))
+            {
+                DocGhiFile.setExcelFile(row++, 7, "Pass", @"C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\dulieutest.xlsx");
+                Assert.AreEqual(actmsg, mess);
             }
             else
             {
-                DocGhiFile.setExcelFile(row++, 7, "Fail", @"C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Pham Van Hieu\dulieutest.xlsx");
-                Assert.AreEqual("Thanh cong", mess);
+                DocGhiFile.setExcelFile(row++, 7, "Fail", @"C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\dulieutest.xlsx");
+                Assert.AreEqual(actmsg, mess);
             }
 
-            
+            qls.Close();
 
         }
 

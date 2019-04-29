@@ -50,3 +50,8 @@ E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\bin\Debug\DTO.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\bin\Debug\DTO.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\obj\Debug\DTO.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\obj\Debug\DTO.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\bin\Debug\DTO.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\bin\Debug\DTO.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\obj\Debug\DTO.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DTO\obj\Debug\DTO.pdb

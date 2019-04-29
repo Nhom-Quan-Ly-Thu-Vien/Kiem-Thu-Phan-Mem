@@ -103,3 +103,12 @@ E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\DTO.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\BUS.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\BUS.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\DAO.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\DTO.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\DAO.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\bin\Debug\DTO.pdb
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.dll
+C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\BUS\obj\Debug\BUS.pdb
