@@ -1,167 +1,142 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" total="21" errors="0" failures="13" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-04-28" time="23:22:03">
+<test-results name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" total="21" errors="2" failures="9" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-04-29" time="14:58:48">
   <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="G:\NUnit-2.7.0\bin" machine-name="QUOCCUONG" user="quocc" user-domain="QUOCCUONG" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" executed="True" result="Failure" success="False" time="16.139" asserts="0">
+  <test-suite type="Assembly" name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" executed="True" result="Failure" success="False" time="22.401" asserts="0">
     <results>
-      <test-suite type="Namespace" name="PhamQuocCuong_TestSuaDocGia" executed="True" result="Failure" success="False" time="16.109" asserts="0">
+      <test-suite type="Namespace" name="PhamQuocCuong_TestSuaDocGia" executed="True" result="Failure" success="False" time="22.396" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="Test_SuaDocGia" executed="True" result="Failure" success="False" time="16.100" asserts="0">
+          <test-suite type="TestFixture" name="Test_SuaDocGia" executed="True" result="Failure" success="False" time="22.387" asserts="0">
             <results>
-              <test-suite type="ParameterizedTest" name="Test" executed="True" result="Failure" success="False" time="16.098" asserts="0">
+              <test-suite type="ParameterizedTest" name="Test" executed="True" result="Failure" success="False" time="22.381" asserts="0">
+                <properties>
+                  <property name="APARTMENT_STATE" value="STA" />
+                </properties>
                 <results>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.820" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG13&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.948" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="2.950" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG13&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.182" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;AAAAABBBBBAAAAABBBBBAAAAABBBBBA&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.695" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;AAAAABBBBBAAAAABBBBBAAAAABBBBBA&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.988" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James## Bond$$&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.689" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James## Bond$$&quot;,&quot;New York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.963" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Ellie Bamber&quot;,&quot;London&quot;,&quot;1235671520&quot;,&quot;rdoNu.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.671" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,null,&quot;New York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.690" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Ellie Bamber&quot;,&quot;London&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.030" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,null,&quot;New York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.081" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x2026....York&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.670" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....York&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.006" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG02&quot;,&quot;Emma Watson&quot;,&quot;Manchester City&quot;,&quot;1235671520&quot;,&quot;rdoNu.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.684" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x00A3$York%&quot;,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.679" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG02&quot;,&quot;Emma Watson&quot;,&quot;Manchester City&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.119" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x00A3$York%&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.281" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Chinsu&quot;,&quot;Earth&quot;,&quot;1235671521&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.694" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,null,&quot;1235671520&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.767" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Chinsu&quot;,&quot;Earth&quot;,&quot;1235671521&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.899" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,null,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.909" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG04&quot;,&quot;Emilia Clark&quot;,&quot;England&quot;,&quot;1235671520&quot;,&quot;rdoNu.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.728" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;123567152&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.712" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG04&quot;,&quot;Emilia Clark&quot;,&quot;England&quot;,&quot;1235671520&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.073" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;12356712&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.920" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;12356712347&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.034" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;12356712347&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.706" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Anna Hathaway&quot;,&quot;Manhattan&quot;,&quot;7654321987&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.080" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;abcdefh&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="1.090" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG12&quot;,&quot;Jason Bourne&quot;,&quot;Seattle&quot;,null,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Error" success="False" time="0.094" asserts="0">
+                    <failure>
+                      <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 43
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG10&quot;,&quot;Someone Else&quot;,&quot;Nowhere&quot;,&quot;7896541235&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.125" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,null,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Error" success="False" time="0.090" asserts="0">
+                    <failure>
+                      <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 43
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671247&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.217" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
   But was:  "Edit Unsuccessfully"
   ----------------^
 ]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 63
 ]]></stack-trace>
                     </failure>
                   </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG08&quot;,&quot;Anna Hathaway&quot;,&quot;Manhattan&quot;,&quot;7654321987&quot;,&quot;rdoNu.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.778" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;abcdefgh&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.768" asserts="1">
-                    <failure>
-                      <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
-  Expected: "Edit Successfully"
-  But was:  "Edit Unsuccessfully"
-  ----------------^
-]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
-]]></stack-trace>
-                    </failure>
-                  </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG12&quot;,&quot;Jason Bourne&quot;,&quot;Seattle&quot;,null,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.726" asserts="1">
-                    <failure>
-                      <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
-  Expected: "Edit Successfully"
-  But was:  "Edit Unsuccessfully"
-  ----------------^
-]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
-]]></stack-trace>
-                    </failure>
-                  </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG010&quot;,&quot;Someone Else&quot;,&quot;Nowhere&quot;,&quot;7896541235&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.738" asserts="1" />
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,null,&quot;rdoNam.Checked&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.769" asserts="1">
-                    <failure>
-                      <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
-  Expected: "Edit Successfully"
-  But was:  "Edit Unsuccessfully"
-  ----------------^
-]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
-]]></stack-trace>
-                    </failure>
-                  </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671247&quot;,null,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.685" asserts="1">
-                    <failure>
-                      <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
-  Expected: "Edit Successfully"
-  But was:  "Edit Unsuccessfully"
-  ----------------^
-]]></message>
-                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 37
-]]></stack-trace>
-                    </failure>
-                  </test-case>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG08&quot;,&quot;Jack Bauer&quot;,&quot;Utah&quot;,&quot;1235671247&quot;,&quot;rdoNam.Checked&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.798" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG10&quot;,&quot;Jack Bauer&quot;,&quot;Utah&quot;,&quot;1235671247&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.980" asserts="1" />
                 </results>
               </test-suite>
             </results>

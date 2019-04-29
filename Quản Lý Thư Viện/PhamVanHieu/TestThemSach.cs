@@ -13,7 +13,7 @@ using DTO;
 
 namespace PhamVanHieu
 {
-    [TestFixture]
+    //[TestFixture]
     public class TestThemSach
     {
 
@@ -23,7 +23,7 @@ namespace PhamVanHieu
             return DocGhiFile.getExcelFile(@"C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Pham Van Hieu\dulieutest.xlsx");
         }
 
-        [TestCaseSource("data"), Test]
+        //[TestCaseSource("data"), Test]
         public void testTinh(String ma, String ten, String sl, String tl, String tg, String mess)
         {
 

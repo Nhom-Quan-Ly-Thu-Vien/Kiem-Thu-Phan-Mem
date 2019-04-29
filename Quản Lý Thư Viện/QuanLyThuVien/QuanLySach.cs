@@ -197,12 +197,25 @@ namespace QuanLyThuVien
             }
         }
 
+        public void setValue(string madg, string tendg, bool gt, string diachi, string sdt) //Function for Testing
+        {
+            txtMaDG.Text = madg;
+            txtTenDG.Text = tendg;
+            if (gt == true)
+            {
+                rdoNam.Checked = true;
+            }
+            else { rdoNu.Checked = true; }
+            txtDiaChi.Text = diachi;
+            txtSDT.Text = sdt;
+        }
+
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
             try
             {
                 if (txtTenDG.Text == "" && rdoNam.Checked == false && rdoNu.Checked == false && txtDiaChi.Text == "" && txtSDT.Text == "")
-                    MessageBox.Show("Chọn độc giả.");
+                    MessageBox.Show("Edit Unsuccessfully", "Info");
                 else
                 {
                     String gioitinh;
@@ -211,16 +224,16 @@ namespace QuanLyThuVien
 
                     Double value;
                     if (Double.TryParse(txtSDT.Text, out value) == false)
-                        MessageBox.Show("Số điện thoại phải là số.");
+                        MessageBox.Show("Edit Unsuccessfully", "Info");
                     else if (txtSDT.TextLength < 10 || txtSDT.TextLength > 11)
-                        MessageBox.Show("Số điện thoại gồm 10 hoặc 11 số.");
+                        MessageBox.Show("Edit Unsuccessfully", "Info");
                     else
                     {
                         DocGia docgia = new DocGia(txtMaDG.Text, txtTenDG.Text, gioitinh, txtDiaChi.Text, txtSDT.Text);
                         DocGiaBUS.Instance.SuaDG(docgia);
                         QuanLySach_Load(sender, e);
 
-                        MessageBox.Show("Sửa thành công.");
+                        MessageBox.Show("Edit Successfully", "Info");
                     }
                 }
             }
