@@ -237,9 +237,9 @@ namespace QuanLyThuVien
                     }
                 }
             }
-            catch
+            catch(NullReferenceException)
             {
-                return;
+                MessageBox.Show("Edit Unsuccessfully", "Info");
             }
         }
 

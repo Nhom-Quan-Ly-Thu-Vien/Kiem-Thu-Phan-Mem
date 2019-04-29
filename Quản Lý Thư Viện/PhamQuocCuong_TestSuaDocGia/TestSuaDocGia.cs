@@ -20,7 +20,7 @@ namespace PhamQuocCuong_TestSuaDocGia
         public int row = 1;
         public static List<Object[]> data()
         {
-            return DocGhiFileExcel.getExcelFile(@"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
+            return DocGhiFileExcel.getExcelFile(@"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
         }
 
         [TestCaseSource("data"),Test][STAThread]
@@ -49,7 +49,7 @@ namespace PhamQuocCuong_TestSuaDocGia
             {
                 if (msg.Equals(actmsg))
                 {
-                    DocGhiFileExcel.setExcelFile(row++, 7, "PASS", @"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
+                    DocGhiFileExcel.setExcelFile(row++, 7, "PASS", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                     Assert.AreEqual(actmsg, msg);
                 }
                 else
@@ -59,7 +59,7 @@ namespace PhamQuocCuong_TestSuaDocGia
             }
             catch (Exception)
             {
-                DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
+                DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                 Assert.AreEqual(actmsg, msg);
             }
             finally
