@@ -19,3 +19,6 @@ C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản 
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.csprojResolveAssemblyReference.cache
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.dll
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.pdb
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.csprojResolveAssemblyReference.cache
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.dll
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.pdb

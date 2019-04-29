@@ -74,3 +74,10 @@ C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản 
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.dll
 C:\Users\phamv\Documents\HomeWork\Kiem thu phan mem\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\DAO\obj\Debug\DAO.pdb
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\bin\Debug\DAO.dll
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\bin\Debug\DAO.pdb
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\bin\Debug\DTO.dll
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\bin\Debug\DTO.pdb
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\obj\Debug\DAO.dll
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\DAO\obj\Debug\DAO.pdb
