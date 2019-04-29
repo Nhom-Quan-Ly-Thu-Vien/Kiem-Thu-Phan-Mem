@@ -55,12 +55,12 @@ namespace PhamQuocCuong_TestSuaDocGia
             int j = 1; //Đọc dữ liệu
 
             List<Object[]> list = new List<Object[]>();
-            string madg = "1";
-            string tendg = "1";
-            string diachi = "1";
-            string sdt = "1";
-            string gt = "1";
-            string msg = "1";
+            string madg = "";
+            string tendg = "";
+            string diachi = "";
+            string sdt = "";
+            string gt = "";
+            string msg = "";
             for (int i = 1; i <= rowCount; i++)
             {
                 try

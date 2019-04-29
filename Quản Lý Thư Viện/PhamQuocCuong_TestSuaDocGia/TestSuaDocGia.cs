@@ -20,21 +20,51 @@ namespace PhamQuocCuong_TestSuaDocGia
         public int row = 1;
         public static List<Object[]> data()
         {
-            return DocGhiFileExcel.getExcelFile(@"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
+            return DocGhiFileExcel.getExcelFile(@"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
         }
 
-        [TestCaseSource("data"), Test]
+        [TestCaseSource("data"),Test][STAThread]
         public void Test(string madg, string tendg, string diachi, string sdt, string gt, string msg)
         {
-            if (msg.Equals("Edit Successfully"))
+            QuanLySach qls = new QuanLySach();
+            qls.Show();
+            ButtonTester btnDocGia = new ButtonTester("btnDocGia");
+            btnDocGia[0].Click();
+
+            string actmsg = "";
+            ModalFormTester msgBox = new ModalFormTester();
+            msgBox.ExpectModal("Info", delegate
             {
-                DocGhiFileExcel.setExcelFile(row++, 7, "PASS", @"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
-                Assert.AreEqual("Edit Successfully", msg);
+                MessageBoxTester mess = new MessageBoxTester("Info");
+                actmsg = mess.Text;
+                mess.ClickOk();
+            });
+
+            qls.setValue(madg, tendg, Convert.ToBoolean(gt.ToLower()), diachi, sdt.TrimEnd());
+
+            ButtonTester btnSua = new ButtonTester("btnSuaDG");
+            btnSua[0].Click();
+
+            try
+            {
+                if (msg.Equals(actmsg))
+                {
+                    DocGhiFileExcel.setExcelFile(row++, 7, "PASS", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
+                    Assert.AreEqual(actmsg, msg);
+                }
+                else
+                {
+                    Assert.Fail();
+                }
             }
-            else
+            catch (Exception)
             {
-                DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Kiểm thử\BTL\Testcase_SuaDocGia.xlsx");
-                Assert.AreEqual("Edit Successfully", msg);
+                DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
+                Assert.AreEqual(actmsg, msg);
+            }
+            finally
+            {
+                qls.Close();
             }
         }
     }
