@@ -14,7 +14,7 @@ using DTO;
 
 namespace PhamQuocCuong_TestSuaDocGia
 {
-    //[TestFixture]
+    [TestFixture]
     public class Test_SuaDocGia
     {
         public int row = 1;
@@ -22,8 +22,8 @@ namespace PhamQuocCuong_TestSuaDocGia
         {
             return DocGhiFileExcel.getExcelFile(@"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
         }
-
-        //[TestCaseSource("data"),Test][STAThread]
+        [TestCaseSource("data"), Test]
+        //[STAThread]
         public void Test(string madg, string tendg, string diachi, string sdt, string gt, string msg)
         {
             QuanLySach qls = new QuanLySach();
@@ -40,7 +40,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 mess.ClickOk();
             });
 
-            qls.setValue(madg, tendg, Convert.ToBoolean(gt.ToLower()), diachi, sdt.TrimEnd());
+            qls.setValue(madg, tendg, Convert.ToBoolean(gt.ToLower()), diachi, sdt.Trim());
 
             ButtonTester btnSua = new ButtonTester("btnSuaDG");
             btnSua[0].Click();
@@ -61,10 +61,6 @@ namespace PhamQuocCuong_TestSuaDocGia
             {
                 DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                 Assert.AreEqual(actmsg, msg);
-            }
-            finally
-            {
-                qls.Close();
             }
         }
     }

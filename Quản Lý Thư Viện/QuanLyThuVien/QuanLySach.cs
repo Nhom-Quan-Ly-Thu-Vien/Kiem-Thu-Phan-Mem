@@ -208,14 +208,14 @@ namespace QuanLyThuVien
             }
             else { rdoNu.Checked = true; }
             txtDiaChi.Text = diachi;
-            txtSDT.Text = sdt;
+            txtSDT.Text = sdt.Trim();
         }
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtTenDG.Text == "" && rdoNam.Checked == false && rdoNu.Checked == false && txtDiaChi.Text == "" && txtSDT.Text == "")
+                if (txtTenDG.Text == "" || (rdoNam.Checked == false && rdoNu.Checked == false) || txtDiaChi.Text == "" || txtSDT.Text == "")
                     MessageBox.Show("Edit Unsuccessfully", "Info");
                 else
                 {
@@ -224,9 +224,9 @@ namespace QuanLyThuVien
                     else gioitinh = "Nữ";
 
                     Double value;
-                    if (Double.TryParse(txtSDT.Text, out value) == false)
+                    if (!Double.TryParse(txtSDT.Text.Trim(), out value))
                         MessageBox.Show("Edit Unsuccessfully", "Info");
-                    else if (txtSDT.TextLength < 10 || txtSDT.TextLength > 11)
+                    else if (txtSDT.Text.Trim().Length !=10)
                         MessageBox.Show("Edit Unsuccessfully", "Info");
                     else
                     {
@@ -238,9 +238,9 @@ namespace QuanLyThuVien
                     }
                 }
             }
-            catch(NullReferenceException)
+            catch(Exception)
             {
-                MessageBox.Show("Edit Unsuccessfully", "Info");
+                return;
             }
         }
 
