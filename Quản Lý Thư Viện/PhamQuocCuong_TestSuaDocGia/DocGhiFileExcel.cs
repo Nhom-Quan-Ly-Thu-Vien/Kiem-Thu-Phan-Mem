@@ -55,12 +55,12 @@ namespace PhamQuocCuong_TestSuaDocGia
             int j = 1; //Đọc dữ liệu
 
             List<Object[]> list = new List<Object[]>();
-            string madg = "";
-            string tendg = "";
-            string diachi = "";
-            string sdt = "";
-            string gt = "";
-            string msg = "";
+            string madg = "1";
+            string tendg = "1";
+            string diachi = "1";
+            string sdt = "1";
+            string gt = "1";
+            string msg = "1";
             for (int i = 1; i <= rowCount; i++)
             {
                 try
@@ -69,7 +69,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    madg = null;
+                    madg = "null";
                 }
                 try
                 {
@@ -77,7 +77,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    tendg = null;
+                    tendg = "null";
                 }
                 try
                 {
@@ -85,7 +85,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    diachi = null;
+                    diachi = "null";
                 }
                 try
                 {
@@ -93,7 +93,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    sdt = null;
+                    sdt = "null";
                 }
                 try
                 {
@@ -101,7 +101,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    gt = null;
+                    gt = "null";
                 }
                 try
                 {
@@ -109,7 +109,7 @@ namespace PhamQuocCuong_TestSuaDocGia
                 }
                 catch (Exception)
                 {
-                    msg = null;
+                    msg = "null";
                 }
                 if (j > colCount)
                 {

@@ -35,6 +35,7 @@ namespace QuanLyThuVien
             cmbTheLoai.DataSource = SachBUS.Instance.GetCatory();
             cmbTheLoai.DisplayMember = "TenTheLoai";
             cmbTheLoai.ValueMember = "MaTheLoai";
+            cmbTheLoai.SelectedIndex = -1;
 
             //đổ dữ liệu lên combobox Tên sách
             cmbTenSachPhieu.DataSource = SachBUS.Instance.ShowSach();
@@ -207,14 +208,14 @@ namespace QuanLyThuVien
             }
             else { rdoNu.Checked = true; }
             txtDiaChi.Text = diachi;
-            txtSDT.Text = sdt;
+            txtSDT.Text = sdt.Trim();
         }
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtTenDG.Text == "" && rdoNam.Checked == false && rdoNu.Checked == false && txtDiaChi.Text == "" && txtSDT.Text == "")
+                if (txtTenDG.Text == "" || (rdoNam.Checked == false && rdoNu.Checked == false) || txtDiaChi.Text == "" || txtSDT.Text == "")
                     MessageBox.Show("Edit Unsuccessfully", "Info");
                 else
                 {
@@ -225,7 +226,7 @@ namespace QuanLyThuVien
                     Double value;
                     if (Double.TryParse(txtSDT.Text, out value) == false)
                         MessageBox.Show("Edit Unsuccessfully", "Info");
-                    else if (txtSDT.TextLength < 10 || txtSDT.TextLength > 11)
+                    else if (txtSDT.Text.Trim().Length !=10)
                         MessageBox.Show("Edit Unsuccessfully", "Info");
                     else
                     {
@@ -237,9 +238,9 @@ namespace QuanLyThuVien
                     }
                 }
             }
-            catch(NullReferenceException)
+            catch
             {
-                MessageBox.Show("Edit Unsuccessfully", "Info");
+                return;
             }
         }
 
@@ -347,13 +348,20 @@ namespace QuanLyThuVien
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
-        
-             if (txtTenSach.TextLength == 0) MessageBox.Show("Tên sách không được để trống.");
-            else if (txtSoLuong.TextLength == 0) MessageBox.Show("vui lòng nhập số lượng");
+            
+            if (txtTenSach.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtSoLuong.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtSoLuong.TextLength >5 ) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtTacGia.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtTacGia.TextLength > 30) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtTenSach.TextLength > 30) MessageBox.Show("Unsuccessfull", "Info");
+            else if (cmbTheLoai.SelectedItem==null) MessageBox.Show("Unsuccessfull", "Info");
+            
             else
             {
                 try
                 {
+                    
                     Int32 flag = 0;
                     for (int i = 0; i < dtgQuanLySach.Rows.Count; i++)
                     {
@@ -361,27 +369,31 @@ namespace QuanLyThuVien
                         string tacgia = dtgQuanLySach.Rows[i].Cells[4].Value.ToString().ToLower();
                         if (txtTenSach.Text.ToLower() == tenSach && txtTacGia.Text.ToLower() == tacgia)
                         {
-                            MessageBox.Show("Sách đã có rồi.");
+                            MessageBox.Show("Unsuccessfull", "Info");
                             flag = 1;
+                            break;
                         }
 
                     }
                     if(flag==0)
                     {
+                        
                         Sach sach = new Sach(txtMaSach.Text, txtTenSach.Text, (cmbTheLoai.SelectedValue.ToString()), int.Parse(txtSoLuong.Text), txtTacGia.Text);
+                        MessageBox.Show("Successfull", "Info");
                         SachBUS.Instance.AddBook(sach);
                         QuanLySach_Load(sender, e);
                         tangMa("MS", dtgQuanLySach, txtMaSach);
+                        
                     }
                         
                 }
                 catch (SqlException)
                 {
-                    MessageBox.Show("Trùng mã Sách.");
+                    MessageBox.Show("Unsuccessfull", "Info");
                 }
                 catch(FormatException)
                 {
-                    MessageBox.Show("Nhập sai kiểu dữ liệu.");
+                    MessageBox.Show("Unsuccessfull", "Info");
                 }
 
             }
@@ -390,21 +402,35 @@ namespace QuanLyThuVien
       
         private void btnSuaSach_Click(object sender, EventArgs e)
         {
-            if (txtTenSach.TextLength == 0) MessageBox.Show("Tên sách không được để trống.");
-            else if (txtSoLuong.TextLength == 0) MessageBox.Show("vui lòng nhập số lượng");
+            if (txtTenSach.TextLength == 0) MessageBox.Show("Unsuccessfully", "Info");
+            else if (txtSoLuong.TextLength == 0) MessageBox.Show("Unsuccessfully", "Info");
+            else if (txtSoLuong.TextLength != 0)
+            {
+                try
+                {
+                    int.Parse(txtSoLuong.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Unsuccessfully", "Info");
+                }
+            }
+            else if (txtTacGia.TextLength == 0) MessageBox.Show("Unsuccessfully", "Info");
             else
             {
                 try
                 {
+
                     Sach sach = new Sach(txtMaSach.Text, txtTenSach.Text, cmbTheLoai.SelectedValue.ToString(), int.Parse(txtSoLuong.Text), txtTacGia.Text);
 
                     SachBUS.Instance.UpdateBook(sach);
 
                     QuanLySach_Load(sender, e);
+                    MessageBox.Show("Successfull", "Info");
                 }
                 catch (FormatException)
                 {
-                    MessageBox.Show("Nhập sai kiểu dữ liệu.");
+                    MessageBox.Show("Unsuccessfully", "Info");
                 }
             }          
         }
@@ -442,6 +468,15 @@ namespace QuanLyThuVien
             txtTenSach.Text = "";
             txtSoLuong.Text = "";
             txtTacGia.Text = "";                
+        }
+
+        public void testDuLieu(String ten,String sl,String tl,String tg) { //code for testing
+        
+
+            txtTenSach.Text = ten;
+            txtSoLuong.Text = sl;
+            cmbTheLoai.Text = tl;
+            txtTacGia.Text = tg;  
         }
         #endregion
 

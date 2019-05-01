@@ -36,25 +36,17 @@ namespace PhamVanHieu
             int rowCount = Range.Rows.Count;
             int colCount = 6;
 
-            int j = 1;
+            int j = 2;
 
             List<Object[]> list = new List<Object[]>();
-            String ma = "1";
+           
             String ten = "1";
             String sl = "1";
             String tl = "1";
             String tg = "1";
             String mess = "1";
-            for (int i = 1; i <= rowCount; i++)
+            for (int i = 2; i <= rowCount; i++)
             {
-                try
-                {
-                    ma = Range.Cells[i, j++].Value2.ToString();
-                }
-                catch (Exception)
-                {
-                    ma = "null";
-                }
 
                 try
                 {
@@ -62,7 +54,7 @@ namespace PhamVanHieu
                 }
                 catch (Exception)
                 {
-                    ten = "null";
+                    ten = null;
                 }
 
                 try
@@ -71,7 +63,7 @@ namespace PhamVanHieu
                 }
                 catch (Exception)
                 {
-                    sl = "null";
+                    sl = null;
                 }
 
                 try
@@ -80,7 +72,7 @@ namespace PhamVanHieu
                 }
                 catch (Exception)
                 {
-                    tl = "null";
+                    tl = null;
                 }
 
                 try
@@ -89,7 +81,7 @@ namespace PhamVanHieu
                 }
                 catch (Exception)
                 {
-                    tg = "null";
+                    tg = null;
                 }
 
                 try
@@ -98,13 +90,13 @@ namespace PhamVanHieu
                 }
                 catch (Exception)
                 {
-                    mess = "null";
+                    mess = null;
                 }
-                if (j > colCount) { j = 1; }
+                if (j > colCount) { j = 2; }
 
-                Console.WriteLine(j);
+               
 
-                Object[] obj = new Object[] { ma, ten, sl, tl, tg, mess };
+                Object[] obj = new Object[] { ten, sl, tl, tg, mess };
                 list.Add(obj);
 
 

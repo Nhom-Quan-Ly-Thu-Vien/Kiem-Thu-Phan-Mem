@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1011]C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\PhamVanHieu.dll</TopNode>
+  <SelectedNode>[0-1012]PhamVanHieu</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1011]C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\PhamVanHieu.dll" Expanded="true" />
+    <Node UniqueName="[0-1012]PhamVanHieu" Expanded="true" />
+    <Node UniqueName="[0-1000]PhamVanHieu.TestThemSach" Expanded="true" />
+    <Node UniqueName="[0-1001]PhamVanHieu.TestThemSach.testThems" Expanded="true" />
+  </Nodes>
+</VisualState>
