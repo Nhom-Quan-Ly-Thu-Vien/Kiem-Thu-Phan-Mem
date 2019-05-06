@@ -1,0 +1,18 @@
+
+- Xin chào các bạn.
+- Ở video trước mình đã thực hiện Test chức năng Sửa độc giả ở phần mềm Quản lý thư viện (Version 0.1)
+nhưng có một số Testcase bị lỗi.
+- Vì vậy ở video này mình sẽ thực hiện sửa lỗi và test phiên bản nâng cấp Quản lý thư viện (Version 0.1.1)
+- Ở Version 0.1 có các lỗi như sau:
+	a) Do chưa kiểm tra mã độc giả đã có trong cơ sở dữ liệu hay chưa
+	b) Chưa kiểm tra số ký tự tối đa của tên độc giả
+	c) Chưa bắt lỗi tên độc giả chứa ký tự đặc biệt 
+	d) Chưa bắt lỗi tên độc giả bỏ trống
+	e) Chưa kiểm tra số ký tự tối đa của địa chỉ
+	f) Chưa bắt lỗi địa chỉ chứa ký tự đặc biệt
+	g) Chưa bắt lỗi địa chỉ bỏ trống
+- Sau đây mình sẽ đi thực hiện việc sửa lỗi
+- Sau khi chỉnh sửa mã nguồn, thực hiện Build Solution
+- Sau đó mở NUnit chạy các testcase
+- Như vậy mình đã sửa được một số lỗi và vẫn còn lỗi đang chờ được sửa.:)
+- Mình xin kết thức video tại đây.

@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-05-06" time="16:57:53">
+<test-results name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" total="21" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-05-06" time="23:07:13">
   <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="G:\NUnit-2.7.0\bin" machine-name="QUOCCUONG" user="quocc" user-domain="QUOCCUONG" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" executed="True" result="Failure" success="False" time="1.104" asserts="0">
+  <test-suite type="Assembly" name="E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" executed="True" result="Failure" success="False" time="20.596" asserts="0">
     <results>
-      <test-suite type="Namespace" name="PhamQuocCuong_TestSuaDocGia" executed="True" result="Failure" success="False" time="1.104" asserts="0">
+      <test-suite type="Namespace" name="PhamQuocCuong_TestSuaDocGia" executed="True" result="Failure" success="False" time="20.596" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="Test_SuaDocGia" executed="True" result="Failure" success="False" time="1.104" asserts="0">
+          <test-suite type="TestFixture" name="Test_SuaDocGia" executed="True" result="Failure" success="False" time="20.595" asserts="0">
             <results>
-              <test-suite type="ParameterizedTest" name="Test" executed="True" result="Failure" success="False" time="1.103" asserts="0">
+              <test-suite type="ParameterizedTest" name="Test" executed="True" result="Failure" success="False" time="20.595" asserts="0">
                 <results>
-                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;null&quot;,&quot;1235671521&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="1.103" asserts="1">
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.894" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG13&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.868" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;AAAAABBBBBAAAAABBBBBAAAAABBBBBA&quot;,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.926" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James## Bond$$&quot;,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.892" asserts="1">
                     <failure>
                       <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
   Expected: "Edit Successfully"
@@ -22,6 +25,33 @@
 ]]></stack-trace>
                     </failure>
                   </test-case>
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG03&quot;,&quot;Ellie Bamber&quot;,&quot;London&quot;,&quot;1235671529&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.038" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,null,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.944" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....YorkNew\x2026....York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.968" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG02&quot;,&quot;Emma Watson&quot;,&quot;Manchester City&quot;,&quot;1235671529&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.074" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New\x00A3$York%&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Failure" success="False" time="0.947" asserts="1">
+                    <failure>
+                      <message><![CDATA[  Expected string length 17 but was 19. Strings differ at index 5.
+  Expected: "Edit Successfully"
+  But was:  "Edit Unsuccessfully"
+  ----------------^
+]]></message>
+                      <stack-trace><![CDATA[at PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(String madg, String tendg, String diachi, String sdt, String gt, String msg) in e:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\TestSuaDocGia.cs:line 56
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,null,&quot;1235671521&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.935" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG07&quot;,&quot;Chinsu&quot;,&quot;Earth&quot;,&quot;1235671525&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.057" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG04&quot;,&quot;Emilia Clark&quot;,&quot;England&quot;,&quot;1235671524&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.972" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;123567&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.932" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;12356712347&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.926" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Anna Hathaway&quot;,&quot;Manhattan&quot;,&quot;7654321987&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="0.990" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG07&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;abcdef&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.970" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG10&quot;,&quot;Jason Bourne&quot;,&quot;Seattle&quot;,&quot;null&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="0.990" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG10&quot;,&quot;Someone Else&quot;,&quot;Nowhere&quot;,&quot;7896541235&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.034" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;null&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="1.055" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;12356712478&quot;,&quot;True&quot;,&quot;Edit Unsuccessfully&quot;)" executed="True" result="Success" success="True" time="1.040" asserts="1" />
+                  <test-case name="PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG12&quot;,&quot;Jon Snow&quot;,&quot;Winterfell&quot;,&quot;1235671247&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" executed="True" result="Success" success="True" time="1.022" asserts="1" />
                 </results>
               </test-suite>
             </results>

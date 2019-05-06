@@ -1,0 +1,25 @@
+
+- Hôm nay mình sẽ hướng dẫn các bạn cách test phần mềm WinForm với NUnit và NUnitForm
+   trên Microsoft Visual Studio
+
+- Các bạn cần làm theo các bước sau::
+   - Bước 1: Tạo một ClassLibrary với tên “PhamQuocCuong_TestSuaDocGia” trong Solution “QuanLyThuVien”.
+   - Bước 2: Thêm các framework: Chuột phải “PhamQuocCuong_TestSuaDocGia” -> Add Reference 
+	-> Chọn các framework sau:
+         o	NUnit.Extensions.Forms
+         o	NUnit.Framework
+         o	System.Windows.Forms
+         o	Microsoft.Office.Interop.Excel
+         o	System.Data.OleDb 
+         o	System.Runtime.InteropServices
+    - Bước 3: 
+         o	Tạo hàm setValue() trong file QuanLySach.cs để đưa dữ liệu các Testcases vào ô TextBox
+         o	Tạo class DocGhiFileExcel.cs để đọc dữ liệu từ file Excel
+         o	Tạo file TestSuaDocGia.cs để thực hiện việc test tự động
+    - Bước 4: Run test
+         o	Trên thanh công cụ chọn BUILD -> Build Solution hoặc Rebuild Solution
+         o	Mở Nunit.exe
+         o	Chọn File -> Open Project ->File Quản Lý Thư Viện -> PhamQuocCuong_TestSuaDocGia 
+	-> bin -> Debug -> PhamQuocCuong_TestSuaDocGia.dll
+	Click Run và chờ kết quả
+	Vậy là mình đã thực hiện xong. 

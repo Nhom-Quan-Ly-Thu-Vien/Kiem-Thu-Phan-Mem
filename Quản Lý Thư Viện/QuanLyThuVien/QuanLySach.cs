@@ -15,7 +15,7 @@ namespace QuanLyThuVien
             InitializeComponent();
         }
 
-     
+
         int row;
         private void QuanLySach_Load(object sender, EventArgs e)
         {
@@ -52,10 +52,10 @@ namespace QuanLyThuVien
             cboDGPT.ValueMember = "MaDocGia";
 
 
-         
+
             //Tăng mã tự động          
-            tangMa("DG",dtgDocGia,txtMaDG);
-            tangMa("MS", dtgQuanLySach,txtMaSach);
+            tangMa("DG", dtgDocGia, txtMaDG);
+            tangMa("MS", dtgQuanLySach, txtMaSach);
             tangMa("MP", dataGridView1, txtmaPhieu);
             txtMaSach.Enabled = false;
             txtMaDG.Enabled = false;
@@ -67,12 +67,12 @@ namespace QuanLyThuVien
                 if (int.Parse(dtgQuanLySach.Rows[i].Cells[3].Value.ToString()) == 0)
                     dtgQuanLySach.Rows[i].Cells[3].Style.BackColor = Color.Red;
             }
-          
+
         }
         //auto tawng mã
 
-        
-        private void tangMa(string ch,DataGridView dataGridView,TextBox textBox) 
+
+        private void tangMa(string ch, DataGridView dataGridView, TextBox textBox)
         {
             if (dataGridView.Rows.Count == 0)
                 textBox.Text = ch + "00";
@@ -116,11 +116,11 @@ namespace QuanLyThuVien
             tabQuanLyPhieu.Show();
             panAbout.Hide();
 
-            tangMa("MP",dataGridView1,txtmaPhieu);
+            tangMa("MP", dataGridView1, txtmaPhieu);
             tabQuanLyPhieu.SelectedTab = tabQuanLyPhieu.TabPages[0];
             cmbTenDGPhieu.Text = "";
             cmbTenSachPhieu.SelectedIndex = 0;
-          
+
             lstSachMuon.Items.Clear();
             txtMaDGPhieu.Text = "";
             lblSLM.Hide();
@@ -147,7 +147,7 @@ namespace QuanLyThuVien
         {
             try
             {
-              
+
 
                 if (txtTenDG.Text == "")
                     MessageBox.Show("Nhập tên độc giả.");
@@ -179,7 +179,7 @@ namespace QuanLyThuVien
                             }
 
                         }
-                        if(flag==0)
+                        if (flag == 0)
                         {
                             DocGia docgia = new DocGia(txtMaDG.Text, txtTenDG.Text, gioitinh, txtDiaChi.Text, txtSDT.Text);
                             DocGiaBUS.Instance.ThemDG(docgia);
@@ -188,7 +188,7 @@ namespace QuanLyThuVien
                             MessageBox.Show("Thêm thành công.");
                             tangMa("DG", dtgDocGia, txtMaDG);
                         }
-                            
+
                     }
                 }
             }
@@ -196,6 +196,17 @@ namespace QuanLyThuVien
             {
                 MessageBox.Show("Trùng mã độc giả.");
             }
+        }
+
+        //Ở đây mình viết một hàm để kiểm tra xem mã độc giả trong ô TextBox đã có trong cơ sở dứ liệu hay chưa
+        public bool KiemTraMaDG(DataGridView dtgDocGia)
+        {
+            for (int i = 0; i < dtgDocGia.RowCount; i++) { //Một vòng lặp duyệt các mã độc giả trong Datagridview
+                if (txtMaDG.Text.Equals(dtgDocGia.Rows[i].Cells[0].Value.ToString())) { //Nếu tồn tại trả về true
+                    return true;
+                }
+            }
+            return false; //không trả về false
         }
 
         public void setValue(string madg, string tendg, bool gt, string diachi, string sdt) //Function for Testing
@@ -213,34 +224,30 @@ namespace QuanLyThuVien
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
-            try
+            //Kiểm tra các điều  kiện nhập vào
+            if (txtTenDG.Text == "" || (rdoNam.Checked == false && rdoNu.Checked == false) || txtDiaChi.Text == "" ||
+                txtSDT.Text == "" || !KiemTraMaDG(dtgDocGia) || txtTenDG.Text.Length > 30 || txtDiaChi.Text.Length > 100) {
+                MessageBox.Show("Edit Unsuccessfully", "Info");
+            }
+            else
             {
-                if (txtTenDG.Text == "" || (rdoNam.Checked == false && rdoNu.Checked == false) || txtDiaChi.Text == "" || txtSDT.Text == "")
+                String gioitinh;
+                if (rdoNam.Checked) gioitinh = "Nam";
+                else gioitinh = "Nữ";
+
+                Double value;
+                if (!Double.TryParse(txtSDT.Text, out value))
+                    MessageBox.Show("Edit Unsuccessfully", "Info");
+                else if (txtSDT.Text.Length != 10)
                     MessageBox.Show("Edit Unsuccessfully", "Info");
                 else
                 {
-                    String gioitinh;
-                    if (rdoNam.Checked) gioitinh = "Nam";
-                    else gioitinh = "Nữ";
+                    DocGia docgia = new DocGia(txtMaDG.Text, txtTenDG.Text, gioitinh, txtDiaChi.Text, txtSDT.Text);
+                    DocGiaBUS.Instance.SuaDG(docgia);
+                    QuanLySach_Load(sender, e);
 
-                    Double value;
-                    if (!Double.TryParse(txtSDT.Text, out value))
-                        MessageBox.Show("Edit Unsuccessfully", "Info");
-                    else if (txtSDT.Text.Length !=10)
-                        MessageBox.Show("Edit Unsuccessfully", "Info");
-                    else
-                    {
-                        DocGia docgia = new DocGia(txtMaDG.Text, txtTenDG.Text, gioitinh, txtDiaChi.Text, txtSDT.Text);
-                        DocGiaBUS.Instance.SuaDG(docgia);
-                        QuanLySach_Load(sender, e);
-
-                        MessageBox.Show("Edit Successfully", "Info");
-                    }
+                    MessageBox.Show("Edit Successfully", "Info");
                 }
-            }
-            catch(SqlException)
-            {
-                MessageBox.Show("Edit Unsuccessfully", "Info");
             }
         }
 
@@ -280,8 +287,8 @@ namespace QuanLyThuVien
                 cmbTenDGPhieu.SelectedValue = txtMaDGPhieu.Text;
                 tabQuanLyPhieu.SelectedTab = tabQuanLyPhieu.TabPages[1];
             }
-            
-            
+
+
         }
 
         private void txtTimKiemDocGia_TextChanged(object sender, EventArgs e)
@@ -315,7 +322,7 @@ namespace QuanLyThuVien
 
         private void panDocGia_MouseClick(object sender, MouseEventArgs e)
         {
-            tangMa("DG",dtgDocGia,txtMaDG);
+            tangMa("DG", dtgDocGia, txtMaDG);
             txtMaDG.Enabled = false;
             txtTenDG.Text = "";
             rdoNam.Checked = false;
@@ -324,7 +331,7 @@ namespace QuanLyThuVien
             txtSDT.Text = "";
         }
         #endregion
-        
+
         //Code Quản lý sách
         #region
         private void dtgQuanLySach_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -348,20 +355,20 @@ namespace QuanLyThuVien
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
-            
+
             if (txtTenSach.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
             else if (txtSoLuong.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
-            else if (txtSoLuong.TextLength >5 ) MessageBox.Show("Unsuccessfull", "Info");
+            else if (txtSoLuong.TextLength > 5) MessageBox.Show("Unsuccessfull", "Info");
             else if (txtTacGia.TextLength == 0) MessageBox.Show("Unsuccessfull", "Info");
             else if (txtTacGia.TextLength > 30) MessageBox.Show("Unsuccessfull", "Info");
             else if (txtTenSach.TextLength > 30) MessageBox.Show("Unsuccessfull", "Info");
-            else if (cmbTheLoai.SelectedItem==null) MessageBox.Show("Unsuccessfull", "Info");
-            
+            else if (cmbTheLoai.SelectedItem == null) MessageBox.Show("Unsuccessfull", "Info");
+
             else
             {
                 try
                 {
-                    
+
                     Int32 flag = 0;
                     for (int i = 0; i < dtgQuanLySach.Rows.Count; i++)
                     {
@@ -375,31 +382,31 @@ namespace QuanLyThuVien
                         }
 
                     }
-                    if(flag==0)
+                    if (flag == 0)
                     {
-                        
+
                         Sach sach = new Sach(txtMaSach.Text, txtTenSach.Text, (cmbTheLoai.SelectedValue.ToString()), int.Parse(txtSoLuong.Text), txtTacGia.Text);
                         MessageBox.Show("Successfull", "Info");
                         SachBUS.Instance.AddBook(sach);
                         QuanLySach_Load(sender, e);
                         tangMa("MS", dtgQuanLySach, txtMaSach);
-                        
+
                     }
-                        
+
                 }
                 catch (SqlException)
                 {
                     MessageBox.Show("Unsuccessfull", "Info");
                 }
-                catch(FormatException)
+                catch (FormatException)
                 {
                     MessageBox.Show("Unsuccessfull", "Info");
                 }
 
             }
-            
+
         }
-      
+
         private void btnSuaSach_Click(object sender, EventArgs e)
         {
             if (txtTenSach.TextLength == 0) MessageBox.Show("Unsuccessfully", "Info");
@@ -432,7 +439,7 @@ namespace QuanLyThuVien
                 {
                     MessageBox.Show("Unsuccessfully", "Info");
                 }
-            }          
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -440,43 +447,44 @@ namespace QuanLyThuVien
             try
             {
                 DialogResult dlr = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if(dlr == DialogResult.Yes)
+                if (dlr == DialogResult.Yes)
                 {
                     string ma = txtMaSach.Text;
                     SachBUS.Instance.DeleteBook(ma);
                     QuanLySach_Load(sender, e);
                 }
-                
+
             }
-            catch 
+            catch
             {
                 return;
-            }           
+            }
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            
+
             string dk = txtTimKiem.Text;
-            dtgQuanLySach.DataSource= SachBUS.Instance.LookBook(dk);
+            dtgQuanLySach.DataSource = SachBUS.Instance.LookBook(dk);
         }
 
         private void panQuanLySach_Click(object sender, EventArgs e)
         {
             txtMaSach.Enabled = false;
-            tangMa("MS", dtgQuanLySach,txtMaSach);        
+            tangMa("MS", dtgQuanLySach, txtMaSach);
             txtTenSach.Text = "";
             txtSoLuong.Text = "";
-            txtTacGia.Text = "";                
+            txtTacGia.Text = "";
         }
 
-        public void testDuLieu(String ten,String sl,String tl,String tg) { //code for testing
-        
+        public void testDuLieu(String ten, String sl, String tl, String tg)
+        { //code for testing
+
 
             txtTenSach.Text = ten;
             txtSoLuong.Text = sl;
             cmbTheLoai.Text = tl;
-            txtTacGia.Text = tg;  
+            txtTacGia.Text = tg;
         }
         #endregion
 
@@ -484,9 +492,9 @@ namespace QuanLyThuVien
         #region
         private void txtTKPhieu_TextChanged(object sender, EventArgs e)
         {
-           dgvPhieuMuon.DataSource= PhieuMuonBUS.Instance.LookPhieuMuon(txtTKPhieu.Text);
+            dgvPhieuMuon.DataSource = PhieuMuonBUS.Instance.LookPhieuMuon(txtTKPhieu.Text);
 
-           dgvPhieuTra.DataSource= PhieuMuonBUS.Instance.LookPhieuTra(txtTKPhieu.Text);
+            dgvPhieuTra.DataSource = PhieuMuonBUS.Instance.LookPhieuTra(txtTKPhieu.Text);
         }
         //Xóa Bên Phiếu Mượn
 
@@ -498,10 +506,10 @@ namespace QuanLyThuVien
             lblHienCo.Show();
             String str = dtgQuanLySach.Rows[dtgQuanLySach.Rows.Count - 1].Cells[0].Value.ToString();
             lblHienCo.Text += SachBUS.Instance.getSLuong(cmbTenSachPhieu.SelectedValue.ToString() == "System.Data.DataRowView" ? str : cmbTenSachPhieu.SelectedValue.ToString());
-            
+
         }
 
-      
+
         //Phieu Muon
         #region
         private void btnShowPM_Click(object sender, EventArgs e)
@@ -517,16 +525,16 @@ namespace QuanLyThuVien
 
         private void btnThemPhieu_Click_1(object sender, EventArgs e)
         {
-            
-            int slco= int.Parse(SachBUS.Instance.getSLuong(cmbTenSachPhieu.SelectedValue.ToString()));
+
+            int slco = int.Parse(SachBUS.Instance.getSLuong(cmbTenSachPhieu.SelectedValue.ToString()));
             int slmuon;
             if (txtMaDGPhieu.TextLength == 0) MessageBox.Show("Mã Độc Giả Trống.");
 
             else if (cmbTenSachPhieu.SelectedIndex == -1) MessageBox.Show("Vui lòng chọn sách");
 
             else if (txtSLMuon.TextLength == 0)
-            {               
-                MessageBox.Show("Vui lòng nhập số lượng.");            
+            {
+                MessageBox.Show("Vui lòng nhập số lượng.");
             }
             else if (int.TryParse(txtSLMuon.Text, out slmuon) == false)
                 MessageBox.Show("Số lượng mượn phải là số.");
@@ -535,9 +543,9 @@ namespace QuanLyThuVien
                 slmuon = int.Parse(txtSLMuon.Text);
                 if (slmuon > slco)//Kiểm tra số lượng sách trong kho
                 {
-                   MessageBox.Show("Số lượng sách hiện không đủ");
+                    MessageBox.Show("Số lượng sách hiện không đủ");
                 }
-               
+
                 else
                 {
                     try
@@ -560,7 +568,7 @@ namespace QuanLyThuVien
                             lstSachMuon.Items[row].SubItems.Add(cmbTenSachPhieu.Text);
                             lstSachMuon.Items[row].SubItems.Add(txtSLMuon.Text);
                         }
-                        
+
                         lblSLM.Hide();
                         txtSLMuon.Hide();
                         txtSLMuon.Text = "";
@@ -569,10 +577,10 @@ namespace QuanLyThuVien
                     {
                         return;
                     }
-                 }
-            
+                }
+
             }
-           
+
 
         }
 
@@ -587,49 +595,49 @@ namespace QuanLyThuVien
 
         private void btnLapPhieu_Click_1(object sender, EventArgs e)
         {
-            
-            
-                if (txtMaDGPhieu.TextLength == 0) MessageBox.Show("Mã Độc Giả Trống.");
 
-                else if (cmbTenSachPhieu.SelectedIndex == -1) MessageBox.Show("Vui lòng chọn sách");
 
-                else if (lstSachMuon.Items.Count == 0)
+            if (txtMaDGPhieu.TextLength == 0) MessageBox.Show("Mã Độc Giả Trống.");
+
+            else if (cmbTenSachPhieu.SelectedIndex == -1) MessageBox.Show("Vui lòng chọn sách");
+
+            else if (lstSachMuon.Items.Count == 0)
+            {
+                MessageBox.Show("Vui lòng thêm sách mượn.");
+            }
+
+            else
+            {
+                for (int i = 0; i < lstSachMuon.Items.Count; i++)
                 {
-                    MessageBox.Show("Vui lòng thêm sách mượn.");
+                    PhieuMuon phieu = new PhieuMuon(txtmaPhieu.Text, txtMaDGPhieu.Text, lstSachMuon.Items[i].SubItems[0].Text, int.Parse(lstSachMuon.Items[i].SubItems[2].Text), dpkNgayMuon.Value);
+                    PhieuMuonBUS.Instance.AddPhieuMuon(phieu);
+                    SachBUS.Instance.UpdateSLBook(int.Parse(SachBUS.Instance.getSLuong(lstSachMuon.Items[i].SubItems[0].Text)) - int.Parse(lstSachMuon.Items[i].SubItems[2].Text), lstSachMuon.Items[i].SubItems[0].Text);
+
                 }
 
-                else
+                MessageBox.Show("Lập Thành Công.");
+
+                MessageBox.Show("Thực hiện in phiếu mượn.");
+
+                PrintDialog PrintDialog = new PrintDialog();
+                PrintDocument PrintDocument = new PrintDocument();
+                PrintDialog.Document = PrintDocument; //Chuyển dữ liệu từ printDocument sang ptintPriviewDialog
+
+                //Nhan su kien receipt ben duoi va in ra hoa don da dc dinh dang ben duoi
+                PrintDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(CreateReceipt);
+
+                //Chọn máy in
+                DialogResult result = PrintDialog.ShowDialog();
+
+                if (result == DialogResult.OK)
                 {
-                    for (int i = 0; i < lstSachMuon.Items.Count; i++)
-                    {
-                        PhieuMuon phieu = new PhieuMuon(txtmaPhieu.Text, txtMaDGPhieu.Text, lstSachMuon.Items[i].SubItems[0].Text, int.Parse(lstSachMuon.Items[i].SubItems[2].Text), dpkNgayMuon.Value);
-                        PhieuMuonBUS.Instance.AddPhieuMuon(phieu);
-                        SachBUS.Instance.UpdateSLBook(int.Parse(SachBUS.Instance.getSLuong(lstSachMuon.Items[i].SubItems[0].Text)) - int.Parse(lstSachMuon.Items[i].SubItems[2].Text), lstSachMuon.Items[i].SubItems[0].Text);
+                    PrintDocument.Print();
+                }
 
-                    }
-                    
-                    MessageBox.Show("Lập Thành Công.");
-                    
-                    MessageBox.Show("Thực hiện in phiếu mượn.");
-
-                    PrintDialog PrintDialog = new PrintDialog();
-                    PrintDocument PrintDocument = new PrintDocument();
-                    PrintDialog.Document = PrintDocument; //Chuyển dữ liệu từ printDocument sang ptintPriviewDialog
-
-                    //Nhan su kien receipt ben duoi va in ra hoa don da dc dinh dang ben duoi
-                    PrintDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(CreateReceipt);
-
-                    //Chọn máy in
-                    DialogResult result = PrintDialog.ShowDialog();
-
-                    if (result == DialogResult.OK)
-                    {
-                        PrintDocument.Print();
-                    }
-
-                    lstSachMuon.Items.Clear();
-                    QuanLySach_Load(sender, e);
-                }          
+                lstSachMuon.Items.Clear();
+                QuanLySach_Load(sender, e);
+            }
         }
 
         private void CreateReceipt(object sender, PrintPageEventArgs e)
@@ -666,7 +674,7 @@ namespace QuanLyThuVien
             graphic.DrawString("Người thu ký", new Font("Courier New", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX + 610, startY + offset + 20);
         }
 
-      
+
         #endregion
         //Phiếu Trả
 
@@ -694,7 +702,7 @@ namespace QuanLyThuVien
             {
                 MessageBox.Show("Mã DG trống.");
             }
-            
+
         }
 
         private void cboDGPT_SelectedIndexChanged(object sender, EventArgs e)
@@ -708,9 +716,9 @@ namespace QuanLyThuVien
             else
             {
                 txtTenDGPT.Text = DocGiaBUS.Instance.GetTenDG(cboDGPT.SelectedValue.ToString());
-            } 
+            }
         }
-       
+
         private void btnXoaSachTra_Click(object sender, EventArgs e)
         {
             try
@@ -718,17 +726,17 @@ namespace QuanLyThuVien
                 int currentIndex = dgvSachTra.CurrentCell.RowIndex;
                 dgvSachTra.Rows.RemoveAt(currentIndex);
             }
-            catch 
+            catch
             {
                 return;
             }
-            
-            
+
+
         }
 
         private void btnLapPhieuTra_Click(object sender, EventArgs e)
         {
-          
+
             DateTime ngaytra = dpkNgayTra.Value;
             if (cboDGPT.SelectedIndex == -1) MessageBox.Show("Chọn độc giả cần lập phiếu.");
             else
@@ -740,10 +748,10 @@ namespace QuanLyThuVien
 
                     PhieuMuonBUS.Instance.AddPhieuTra(ngaytra, ms, cboDGPT.Text);
 
-                    SachBUS.Instance.UpdateSLBook(int.Parse(SachBUS.Instance.getSLuong(ms)) + int.Parse(sltra),ms);
-                       
+                    SachBUS.Instance.UpdateSLBook(int.Parse(SachBUS.Instance.getSLuong(ms)) + int.Parse(sltra), ms);
+
                 }
-                
+
                 MessageBox.Show("Lập phiếu trả thành công.");
 
                 MessageBox.Show("Thực hiện in phiếu trả.");
@@ -766,7 +774,7 @@ namespace QuanLyThuVien
                 QuanLySach_Load(sender, e);
             }
 
-            
+
         }
 
         private void CreateReceipt1(object sender, PrintPageEventArgs e)
@@ -808,7 +816,7 @@ namespace QuanLyThuVien
             try
             {
                 DialogResult dlr = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if(dlr == DialogResult.Yes)
+                if (dlr == DialogResult.Yes)
                 {
                     int currentIndex = dgvPhieuTra.CurrentCell.RowIndex;
                     string mp = dgvPhieuTra.Rows[currentIndex].Cells[0].Value.ToString();
@@ -817,9 +825,9 @@ namespace QuanLyThuVien
                     PhieuMuonBUS.Instance.DeletePhieu(mp, mdg2, ms2);
                     dgvPhieuTra.DataSource = PhieuMuonBUS.Instance.LoadPhieuTra();
                 }
-                
+
             }
-            catch 
+            catch
             {
                 return;
             }
@@ -832,7 +840,7 @@ namespace QuanLyThuVien
                 int currenIndex = dgvPhieuMuon.CurrentCell.RowIndex;
                 cboDGPT.Text = dgvPhieuMuon.Rows[currenIndex].Cells[1].Value.ToString();
                 tabQuanLyPhieu.SelectedTab = tabQuanLyPhieu.TabPages[2];
-                txtMpTra.Text = dgvPhieuMuon.Rows[currenIndex].Cells[0].Value.ToString(); 
+                txtMpTra.Text = dgvPhieuMuon.Rows[currenIndex].Cells[0].Value.ToString();
             }
             catch
             {
@@ -847,7 +855,7 @@ namespace QuanLyThuVien
                 row = e.RowIndex;
                 txtMpTra.Text = dgvSachTra.Rows[row].Cells[0].Value.ToString();
             }
-          catch
+            catch
             {
                 return;
             }

@@ -49,10 +49,10 @@ namespace PhamQuocCuong_TestSuaDocGia
                     Assert.AreEqual(actmsg, msg);
                 }
                 else {
-                    Assert.Fail(); //Phát hiện các truognwf Fail
+                    Assert.Fail(); //Phát hiện các trường hợp Fail
                 }
             } catch (Exception) {
-                DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
+                DocGhiFileExcel.setExcelFile(row++, 7, "PENDING", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                 Assert.AreEqual(actmsg, msg);
             }
         }
