@@ -224,9 +224,9 @@ namespace QuanLyThuVien
                     else gioitinh = "Nữ";
 
                     Double value;
-                    if (!Double.TryParse(txtSDT.Text.Trim(), out value))
+                    if (!Double.TryParse(txtSDT.Text, out value))
                         MessageBox.Show("Edit Unsuccessfully", "Info");
-                    else if (txtSDT.Text.Trim().Length !=10)
+                    else if (txtSDT.Text.Length !=10)
                         MessageBox.Show("Edit Unsuccessfully", "Info");
                     else
                     {
@@ -238,9 +238,9 @@ namespace QuanLyThuVien
                     }
                 }
             }
-            catch(Exception)
+            catch(SqlException)
             {
-                return;
+                MessageBox.Show("Edit Unsuccessfully", "Info");
             }
         }
 

@@ -3,8 +3,8 @@ using System.Windows.Forms;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Extensions.Forms;
-using NUnit.Framework;
+using NUnit.Extensions.Forms; //Cần để viết test
+using NUnit.Framework; //Cần để viết test
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
 using System.Collections.Generic;
@@ -14,51 +14,44 @@ using DTO;
 
 namespace PhamQuocCuong_TestSuaDocGia
 {
-    [TestFixture]
+    [TestFixture] //Sử dụng để thoogn báo chứa các Testcases ở đây
     public class Test_SuaDocGia
     {
         public int row = 1;
-        public static List<Object[]> data()
-        {
+        public static List<Object[]> data() { //Trả về các đối tượng đọc từ file Excel
             return DocGhiFileExcel.getExcelFile(@"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
         }
         [TestCaseSource("data"), Test]
-        //[STAThread]
         public void Test(string madg, string tendg, string diachi, string sdt, string gt, string msg)
         {
+            //Tạo đối tượng của Form
             QuanLySach qls = new QuanLySach();
             qls.Show();
             ButtonTester btnDocGia = new ButtonTester("btnDocGia");
             btnDocGia[0].Click();
-
+            //Lấy thông tin từ MessageBox
             string actmsg = "";
             ModalFormTester msgBox = new ModalFormTester();
-            msgBox.ExpectModal("Info", delegate
-            {
+            msgBox.ExpectModal("Info", delegate {
                 MessageBoxTester mess = new MessageBoxTester("Info");
                 actmsg = mess.Text;
-                mess.ClickOk();
+                mess.ClickOk(); //Click MessageBox
             });
-
+            //Truyền giá trị vào hàm setValue() tạo bên QuanLySach.cs
             qls.setValue(madg, tendg, Convert.ToBoolean(gt.ToLower()), diachi, sdt.Trim());
-
+            //Tạo Button Sửa độc giả rồi click
             ButtonTester btnSua = new ButtonTester("btnSuaDG");
             btnSua[0].Click();
-
-            try
-            {
-                if (msg.Equals(actmsg))
-                {
+            //So sánh kết quả và ghi vào file Excel
+            try {
+                if (msg.Equals(actmsg)) {
                     DocGhiFileExcel.setExcelFile(row++, 7, "PASS", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                     Assert.AreEqual(actmsg, msg);
                 }
-                else
-                {
-                    Assert.Fail();
+                else {
+                    Assert.Fail(); //Phát hiện các truognwf Fail
                 }
-            }
-            catch (Exception)
-            {
+            } catch (Exception) {
                 DocGhiFileExcel.setExcelFile(row++, 7, "FAIL", @"E:\Git\Kiem-Thu-Phan-Mem\Testcase_SuaDocGia.xlsx");
                 Assert.AreEqual(actmsg, msg);
             }

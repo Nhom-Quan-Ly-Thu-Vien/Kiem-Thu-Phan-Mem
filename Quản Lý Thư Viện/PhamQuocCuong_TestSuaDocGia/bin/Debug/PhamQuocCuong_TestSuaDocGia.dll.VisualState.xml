@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
   <TopNode>[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</TopNode>
-  <SelectedNode>[0-1017]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test("DG07","James Bond","New York","abcdef","True","Edit Unsuccessfully")</SelectedNode>
+  <SelectedNode>[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" Expanded="true" />
     <Node UniqueName="[0-1024]PhamQuocCuong_TestSuaDocGia" Expanded="true" />
     <Node UniqueName="[0-1000]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia" Expanded="true" />
-    <Node UniqueName="[0-1001]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test" Expanded="true" Checked="true" />
-    <Node UniqueName="[0-1002]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG01&quot;,&quot;James Bond&quot;,&quot;New York&quot;,&quot;1235671529&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1006]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG03&quot;,&quot;Ellie Bamber&quot;,&quot;London&quot;,&quot;1235671529&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1009]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG02&quot;,&quot;Emma Watson&quot;,&quot;Manchester City&quot;,&quot;1235671529&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1012]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG07&quot;,&quot;Chinsu&quot;,&quot;Earth&quot;,&quot;1235671525&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1013]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG04&quot;,&quot;Emilia Clark&quot;,&quot;England&quot;,&quot;1235671524&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1016]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG06&quot;,&quot;Anna Hathaway&quot;,&quot;Manhattan&quot;,&quot;7654321987&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1019]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG10&quot;,&quot;Someone Else&quot;,&quot;Nowhere&quot;,&quot;7896541235&quot;,&quot;False&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
-    <Node UniqueName="[0-1022]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test(&quot;DG12&quot;,&quot;Jon Snow&quot;,&quot;Winterfell&quot;,&quot;1235671247&quot;,&quot;True&quot;,&quot;Edit Successfully&quot;)" Checked="true" />
+    <Node UniqueName="[0-1001]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test" Expanded="true" />
   </Nodes>
 </VisualState>
