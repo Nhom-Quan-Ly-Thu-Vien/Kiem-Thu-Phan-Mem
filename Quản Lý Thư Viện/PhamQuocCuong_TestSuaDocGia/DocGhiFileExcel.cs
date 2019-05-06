@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ * Hôm nay mình sẽ hướng dẫn các bạn cách test phần mềm WinForm với NUnit và NUnitForm
+   trên Microsoft Visual Studio
+ * Các bạn cần import một số thư viện sau
+ * 
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,12 +71,12 @@ namespace PhamQuocCuong_TestSuaDocGia
                 try {
                     tendg = Range.Cells[i, j++].Value2.ToString();
                 } catch (Exception) {
-                    tendg = "null";
+                    tendg = null;
                 }
                 try {
                     diachi = Range.Cells[i, j++].Value2.ToString();
                 } catch (Exception) {
-                    diachi = "null";
+                    diachi = null;
                 }
                 try {
                     sdt = Range.Cells[i, j++].Value2.ToString();

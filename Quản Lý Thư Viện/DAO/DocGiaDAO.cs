@@ -54,7 +54,7 @@ namespace DAO
 
         public void SuaDG(DocGia docgia)
         {
-            String query = "update DocGia set TenDocGia=N'" + docgia.TenDg + "', GioiTinh=N'" + docgia.Gt + "', DiaChi=N'" + docgia.DiaChi + "', SDT='" + docgia.Sdt + "' where MaDocGia=N'" + docgia.MaDg + "'";
+            String query = "update DocGia set TenDocGia=N'" + docgia.TenDg + "', GioiTinh=N'" + docgia.Gt + "', DiaChi=N'" + docgia.DiaChi + "', SDT='" + docgia.Sdt + "' where MaDocGia='" + docgia.MaDg + "'";
 
             DataProvider.Instance.ExecuteNonQuery(query);
         }

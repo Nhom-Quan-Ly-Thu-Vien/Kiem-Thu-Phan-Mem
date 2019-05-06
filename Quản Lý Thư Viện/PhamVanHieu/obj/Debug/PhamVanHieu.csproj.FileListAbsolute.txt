@@ -36,7 +36,6 @@ E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\BUS.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\NUnitForms.ScreenCapture.exe
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\DAO.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\DTO.pdb
-E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\QuanLyThuVien.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\BUS.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\DAO.pdb
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -61,3 +60,4 @@ C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý T
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.dll
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\obj\Debug\PhamVanHieu.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\nunit.framework.xml
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamVanHieu\bin\Debug\QuanLyThuVien.pdb

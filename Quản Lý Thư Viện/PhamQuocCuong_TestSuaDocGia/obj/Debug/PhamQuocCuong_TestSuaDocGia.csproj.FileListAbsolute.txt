@@ -12,7 +12,6 @@ E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\NUnitForms.ScreenCapture.exe
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\DAO.dll
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\DTO.pdb
-E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\QuanLyThuVien.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\nunit.framework.xml
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\BUS.pdb
 E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\DAO.pdb
@@ -41,3 +40,4 @@ C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý T
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\obj\Debug\PhamQuocCuong_TestSuaDocGia.csproj.ResolveComReference.cache
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\obj\Debug\PhamQuocCuong_TestSuaDocGia.dll
 C:\Users\phamv\Documents\GitHub\Kiem-Thu-Phan-Mem\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\obj\Debug\PhamQuocCuong_TestSuaDocGia.pdb
+E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\QuanLyThuVien.pdb
