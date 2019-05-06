@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\HP\Documents\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\Test\bin\Debug\Test.dll" total="12" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-05-06" time="23:08:34">
+  <environment nunit-version="2.7.0.0" clr-version="2.0.50727.8940" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\HP\Downloads\NUnit-2.7.0\bin" machine-name="PHD" user="HP" user-domain="PHD" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\HP\Documents\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\Test\bin\Debug\Test.dll" executed="True" result="Failure" success="False" time="29.990" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="29.970" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestThemSach" executed="True" result="Failure" success="False" time="29.936" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="SuaRound2" executed="True" result="Failure" success="False" time="29.929" asserts="0">
+                <results>
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;10&quot;,&quot;SUCCESS&quot;)" executed="True" result="Success" success="True" time="4.877" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;&quot;,&quot;BB&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.192" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.107" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.224" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;BB&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.281" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.295" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;B&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.331" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;-1&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.564" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;1001&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.138" asserts="1" />
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;#)(&quot;,&quot;BB&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Failure" success="False" time="2.376" asserts="1">
+                    <failure>
+                      <message><![CDATA[  Expected string length 7 but was 9. Strings differ at index 0.
+  Expected: "SUCCESS"
+  But was:  "UNSUCCESS"
+  -----------^
+]]></message>
+                      <stack-trace><![CDATA[at Test.TestThemSach.SuaRound2(String ten, String tg, String sl, String mess) in C:\Users\HP\Documents\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\Test\TestSua.cs:line 96
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;#)(&quot;,&quot;10&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Failure" success="False" time="2.129" asserts="1">
+                    <failure>
+                      <message><![CDATA[  Expected string length 7 but was 9. Strings differ at index 0.
+  Expected: "SUCCESS"
+  But was:  "UNSUCCESS"
+  -----------^
+]]></message>
+                      <stack-trace><![CDATA[at Test.TestThemSach.SuaRound2(String ten, String tg, String sl, String mess) in C:\Users\HP\Documents\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\Test\TestSua.cs:line 96
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="Test.TestThemSach.SuaRound2(&quot;AA&quot;,&quot;BB&quot;,&quot;#)(&quot;,&quot;UNSUCCESS&quot;)" executed="True" result="Success" success="True" time="2.233" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
