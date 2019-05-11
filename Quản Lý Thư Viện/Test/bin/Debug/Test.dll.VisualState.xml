@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1009]Test.TestThemSach.SuaRound1("AA","BB","-1","UNSUCCESS")</TopNode>
-  <SelectedNode>[0-1017]Test.TestThemSach.SuaRound2("AA","BB","","UNSUCCESS")</SelectedNode>
+  <TopNode>[0-1005]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\Test\bin\Debug\Test.dll</TopNode>
+  <SelectedNode>[0-1005]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\Test\bin\Debug\Test.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1027]C:\Users\HP\Documents\Nhom20_QuanLyThuVien\Quản Lý Thư Viện\Test\bin\Debug\Test.dll" Expanded="true" />
-    <Node UniqueName="[0-1028]Test" Expanded="true" />
+    <Node UniqueName="[0-1005]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\Test\bin\Debug\Test.dll" Expanded="true" />
+    <Node UniqueName="[0-1006]Test" Expanded="true" />
     <Node UniqueName="[0-1000]Test.TestThemSach" Expanded="true" />
     <Node UniqueName="[0-1001]Test.TestThemSach.SuaRound1" Expanded="true" />
-    <Node UniqueName="[0-1014]Test.TestThemSach.SuaRound2" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1003]Test.TestThemSach.SuaRound2" Expanded="true" />
   </Nodes>
 </VisualState>
