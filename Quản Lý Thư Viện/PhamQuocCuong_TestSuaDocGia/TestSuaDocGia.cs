@@ -14,7 +14,7 @@ using DTO;
 
 namespace PhamQuocCuong_TestSuaDocGia
 {
-    [TestFixture] //Sử dụng để thoogn báo chứa các Testcases ở đây
+    [TestFixture] //Sử dụng để thông báo chứa các Testcases ở đây
     public class Test_SuaDocGia
     {
         public int row = 1;

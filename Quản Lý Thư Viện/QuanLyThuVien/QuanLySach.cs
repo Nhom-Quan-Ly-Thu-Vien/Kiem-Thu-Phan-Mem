@@ -238,7 +238,7 @@ namespace QuanLyThuVien
                 Double value;
                 if (!Double.TryParse(txtSDT.Text, out value))
                     MessageBox.Show("Edit Unsuccessfully", "Info");
-                else if (txtSDT.Text.Length != 10)
+                else if (txtSDT.Text.Length < 10 || txtSDT.Text.Length > 11)
                     MessageBox.Show("Edit Unsuccessfully", "Info");
                 else
                 {

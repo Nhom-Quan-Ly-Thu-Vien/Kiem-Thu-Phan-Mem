@@ -31,7 +31,7 @@ namespace PhamQuocCuong_TestSuaDocGia
             Workbook = App.Workbooks.Open(fileName);
             Worksheet = Workbook.Sheets[1];
             //Range = Worksheet.UsedRange;
-            Range = Worksheet.Range["D6:I26"]; //Vùng dữ liệu cần lấy
+            Range = Worksheet.Range["D6:I27"]; //Vùng dữ liệu cần lấy
         }
         public static void close() {
             //Đóng toàn bộ

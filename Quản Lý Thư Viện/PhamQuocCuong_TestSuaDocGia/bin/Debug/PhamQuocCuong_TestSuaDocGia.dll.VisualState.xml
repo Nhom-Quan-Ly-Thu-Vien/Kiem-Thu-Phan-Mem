@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</TopNode>
-  <SelectedNode>[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</SelectedNode>
+  <TopNode>[0-1024]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</TopNode>
+  <SelectedNode>[0-1024]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1023]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" Expanded="true" />
-    <Node UniqueName="[0-1024]PhamQuocCuong_TestSuaDocGia" Expanded="true" />
+    <Node UniqueName="[0-1024]E:\Git\Kiem-Thu-Phan-Mem\Quản Lý Thư Viện\PhamQuocCuong_TestSuaDocGia\bin\Debug\PhamQuocCuong_TestSuaDocGia.dll" Expanded="true" />
+    <Node UniqueName="[0-1025]PhamQuocCuong_TestSuaDocGia" Expanded="true" />
     <Node UniqueName="[0-1000]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia" Expanded="true" />
     <Node UniqueName="[0-1001]PhamQuocCuong_TestSuaDocGia.Test_SuaDocGia.Test" Expanded="true" Checked="true" />
   </Nodes>
